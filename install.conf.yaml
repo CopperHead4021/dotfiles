@@ -17,4 +17,12 @@
 #    - ~/.vim/undo-history
 
 - shell:
-#  - [git submodule update --init --recursive, Installing submodules]
+    - command: "./install-zsh.sh"
+      description: "Installing Zsh"
+      stdout: true
+      stderr: true
+    - command: "[ $? -eq 0 ] && ./pkg-installs.zsh"
+      description: "Installing packages if Zsh installation was successful"
+      stdout: true
+      stderr: true
+
