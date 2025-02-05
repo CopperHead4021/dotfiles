@@ -9,9 +9,9 @@ else
 fi
 
 # Set Zsh as the default shell
-if [ "$SHELL" != "/bin/zsh" ]; then
+if [ "$SHELL" != "$(command -v zsh)" ]; then
     echo "Setting Zsh as the default shell..."
-    chsh -s "$(command -v zsh)"
+    sudo chsh -s "$(command -v zsh)" "$USER"
 else
     echo "Zsh is already the default shell."
     exit 0

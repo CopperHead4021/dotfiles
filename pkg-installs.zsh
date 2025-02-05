@@ -7,7 +7,7 @@ PACKAGES=("git" "curl" "neovim" "bat" "exa" "tmux")
 
 # Detect package manager
 if command -v apt >/dev/null 2>&1; then
-    PKG_MANAGER="sudo apt install -y -q -o Dpkg::Progress-Fancy='1' -o APT::Quiet=1"
+    PKG_MANAGER="sudo apt install -y"
     CHECK_CMD="dpkg -l | grep -qw"
     UPDATE_CMD="sudo apt update"
 elif command -v dnf >/dev/null 2>&1; then
