@@ -6,10 +6,10 @@ format = """
 [  ](bg:#A80030 fg:#2C2C2C)\
 [](bg:#394260 fg:#A80030)\
 $directory\
-[](fg:#394260 bg:#769ff0)\
+[](fg:#394260 bg:#102466)\
 $git_branch\
 $git_status\
-[](fg:#769ff0 bg:#212736)\
+[](fg:#102466 bg:#212736)\
 $nodejs\
 $rust\
 $golang\
@@ -34,12 +34,12 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:#769ff0"
-format = '[[ $symbol $branch ](fg:#e3e5e5 bg:#769ff0)]($style)'
+style = "bg:#102466"
+format = '[[ $symbol $branch ](fg:#e3e5e5 bg:#102466)]($style)'
 
 [git_status]
-style = "bg:#769ff0"
-format = '[[($all_status$ahead_behind )](fg:#e3e5e5 bg:#769ff0)]($style)'
+style = "bg:#102466"
+format = '[[($all_status$ahead_behind )](fg:#e3e5e5 bg:#102466)]($style)'
 
 [nodejs]
 symbol = ""
