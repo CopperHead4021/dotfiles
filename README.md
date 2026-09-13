@@ -3,13 +3,7 @@ Personal Dotfiles Config
 
 I'm learning about dotfiles at [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz).
 
-## TODO
-- Terminal Preferences
-- Changed Shell to ZSH
-- Dock Preferences
-- Mission Control Preference (don't rearrange spaces)
-- Finder Show Path Bar
-- Trackpad (Three Finger Drag and Tap to Click)
-- .zshrc
-- Git (config and SSH)
-- Homebrew installation
+# How to Use:
+1. Pull repo via ssh with `git clone git@github.com:CopperHead4021/dotfiles.git ~/.dotfiles/`
+2. Run `./.dotfiles/install`
+3. Reload terminal, and run `./.dotfiles/install` again.

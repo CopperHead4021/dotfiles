@@ -8,6 +8,7 @@
 - link:
      ~/.zshrc:
      ~/.gitconfig:
+     ~/.config/: config/
 #    ~/.tmux.conf: tmux.conf
 #    ~/.vim: vim
 #    ~/.vimrc: vimrc
@@ -25,4 +26,7 @@
       description: "Installing packages if Zsh installation was successful"
       stdout: true
       stderr: true
-
+    - command: "[ $? -eq 0 ] && ./starship-install.zsh"
+      description: "Installing starship if Zsh installation was successful"
+      stdout: true
+      stderr: true

@@ -3,7 +3,7 @@
 source "./utils.zsh"
 
 # Define packages to install
-PACKAGES=("git" "curl" "neovim" "bat" "exa" "tmux")
+PACKAGES=("git" "curl" "neovim" "bat" "eza" "tmux" "ranger" "ssh")
 
 # Detect package manager
 if command -v apt >/dev/null 2>&1; then
