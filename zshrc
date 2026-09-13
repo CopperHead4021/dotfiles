@@ -6,11 +6,11 @@ export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
 # Change ZSH Options
 
 # Create Aliases
-alias ls='exa'
-alias exa='exa -laFh --git'
+alias ls='eza'
+alias exa='eza -lah --git'
 alias clr='clear'
 alias gcm='git commit -am'
-
+alias rr='ranger'
 # Customize Prompt
 PROMPT='
 %1~ %L %# '
