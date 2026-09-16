@@ -1,7 +1,5 @@
 # dotfiles
-Personal Dotfiles Config
-
-I'm learning about dotfiles at [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz).
+Personal Dotfiles Config -- more info at [dotfiles.eieio.xyz](http://dotfiles.eieio.xyz).
 
 # How to Use:
 1. Pull repo via ssh with `git clone git@github.com:CopperHead4021/dotfiles.git ~/.dotfiles/`

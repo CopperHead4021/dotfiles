@@ -1,7 +1,5 @@
 
 # Set Variables
-# Syntax highlighting for man pages using bat
-export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
 
 # Change ZSH Options
 
@@ -9,8 +7,12 @@ export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
 alias ls='eza'
 alias exa='eza -lah --git'
 alias clr='clear'
+alias cls='clear'
 alias gcm='git commit -am'
 alias rr='ranger'
+alias cat='batcat'
+alias tree='eza --tree --icons'
+
 # Customize Prompt
 PROMPT='
 %1~ %L %# '
@@ -23,8 +25,11 @@ RPROMPT='%*'
 function mkcd() {
   mkdir -p "$@" && cd "$_";
 }
-# Use ZSH Plugins
+ # Syntax highlighting for man pages using bat
+man() {
+  command man "$@" | col -bx | batcat -l man -p
+}
 
-# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# Use ZSH Plugins
 
 eval "$(starship init zsh)"
