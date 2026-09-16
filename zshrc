@@ -12,6 +12,7 @@ alias gcm='git commit -am'
 alias rr='ranger'
 alias cat='batcat'
 alias tree='eza --tree --icons'
+alias neofetch='screenfetch'
 
 # Customize Prompt
 PROMPT='
