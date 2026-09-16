@@ -1,7 +1,5 @@
 
 # Set Variables
-# Syntax highlighting for man pages using bat
-export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
 
 # Change ZSH Options
 
@@ -27,6 +25,11 @@ RPROMPT='%*'
 function mkcd() {
   mkdir -p "$@" && cd "$_";
 }
+ # Syntax highlighting for man pages using bat
+man() {
+  command man "$@" | col -bx | batcat -l man -p
+}
+
 # Use ZSH Plugins
 
 eval "$(starship init zsh)"
