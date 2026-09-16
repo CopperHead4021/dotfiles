@@ -29,6 +29,4 @@ function mkcd() {
 }
 # Use ZSH Plugins
 
-# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 eval "$(starship init zsh)"
