@@ -9,8 +9,12 @@ export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
 alias ls='eza'
 alias exa='eza -lah --git'
 alias clr='clear'
+alias cls='clear'
 alias gcm='git commit -am'
 alias rr='ranger'
+alias cat='batcat'
+alias tree='eza --tree --icons'
+
 # Customize Prompt
 PROMPT='
 %1~ %L %# '
